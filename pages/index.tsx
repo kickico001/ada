@@ -46,6 +46,9 @@ const Home: React.FC<HomeProps> = ({ wallet, setWallet }) => {
     setError(null);
     try {
       const { wallet: connectedWallet, networkId, address } = await connectWallet(selectedWallet);
+      if (!(connectedWallet instanceof BrowserWallet)) {
+        throw new Error('Connected wallet is not of type BrowserWallet');
+      }
       setWallet(connectedWallet);
       console.log('Connected to wallet:', { networkId, address });
 
@@ -81,10 +84,13 @@ const Home: React.FC<HomeProps> = ({ wallet, setWallet }) => {
             <p className={styles.message}>Please select and connect your wallet</p>
             {availableWallets.length > 0 ? (
               <>
+                <label htmlFor="walletSelect" className={styles.label}>Select Wallet:</label>
                 <select 
+                  id="walletSelect"
                   className={styles.walletSelect}
                   value={selectedWallet}
                   onChange={(e) => setSelectedWallet(e.target.value)}
+                  aria-label="Select Wallet"
                 >
                   {availableWallets.map((wallet) => (
                     <option key={wallet.name} value={wallet.name}>
