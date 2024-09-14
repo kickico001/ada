@@ -1,0 +1,101 @@
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+}
+
+.adaLabel {
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 0px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.poolList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.poolItem {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.poolItem:hover {
+  background-color: #f0f0f0;
+}
+
+.stakeButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0033ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.stakeButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.warning {
+  color: #ffa000;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 1rem;
+}
+
+.success {
+  color: #388e3c;
+  margin-top: 1rem;
+}

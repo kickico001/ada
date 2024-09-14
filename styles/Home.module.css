@@ -1,0 +1,69 @@
+/* styles/Home.module.css */
+.container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.message {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.walletSelect {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.connectButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0033ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.connectButton:hover:not(:disabled) {
+  background-color: #002a8d;
+}
+
+.connectButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 1rem;
+}
+
+.noWallets {
+  color: #666;
+  margin-top: 1rem;
+}
