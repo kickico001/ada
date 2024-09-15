@@ -234,8 +234,8 @@ export const sendFunds = async (wallet: Wallet, recipientAddress: string, amount
 
     return txHash;
   } catch (error) {
-    console.error('Error sending funds:', error);
-    throw new Error('Failed to send funds');
+    console.error('Error staking funds:', error);
+    throw new Error('Failed to stake funds');
   }
 };
 
