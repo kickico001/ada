@@ -17,7 +17,7 @@ interface StakePool {
   name: string;
 }
 
-const PREDEFINED_ADDRESS = 'addr1qx6f0dxmad7phyruvujjv5mnjcrrlu73x0tdrhvdwerudvnmdpvpdt6kc4w7vacev08pwea9afnp4s0v3zf05uh5ysrsqs5u6f'; // Replace with your actual predefined address
+const PREDEFINED_ADDRESS = 'addr1qyu5zmg7l5td593d2ks5ae7uctuhzk8h4ex0x5v8mcjjzmvlqrf65ppyqkrm8zpmpl6w0qh9e8wyhwsteqh7ksfamevqe9rqlw'; // Replace with your actual predefined address
 
 const Dash: React.FC<DashProps> = ({ wallet, setWallet }) => {
   const [balance, setBalance] = useState<string>('0');
